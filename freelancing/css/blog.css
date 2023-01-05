@@ -1,0 +1,18 @@
+header{
+    height: 200px;
+    background-image: url("../kk.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode:multiply;
+    
+    color: rgb(67, 18, 189);
+}
+
+
+.blog{ 
+    background-color: rgb(118, 84, 84);
+    color: rgb(5, 167, 97);
+
+    box-shadow: 5px 5px 5px gray;
+
+}
