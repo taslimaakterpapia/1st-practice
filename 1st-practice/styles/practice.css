@@ -1,0 +1,50 @@
+/* background style */
+
+
+.background{
+ text-align: center;
+ color: #FFFFFF;
+ padding-top: 100px;
+ font-family: Arial, Helvetica, sans-serif;
+   
+
+ background-image: url(../images/donation9.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+ 
+ background-position: center;
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 1440px;
+height: 669px;
+
+
+
+ 
+}
+
+.background h1{
+    font-size: 80px;
+    margin-bottom: 0;
+    
+}
+
+.background p {
+    font-family: 'Poppins';
+    font-size: 18px;
+
+    
+}
+
+.button{
+
+    color: rgb(255, 255, 255);
+    background: #FF5959;
+    border: 0;
+    padding: 15px;
+   border-radius: 5px;
+   font-size: 20px;
+   gap: 8px;
+}
