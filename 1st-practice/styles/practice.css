@@ -1,50 +1,178 @@
-/* background style */
+/*  background image and text  */
 
+.background-image {
 
-.background{
- text-align: center;
- color: #FFFFFF;
- padding-top: 100px;
- font-family: Arial, Helvetica, sans-serif;
-   
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 250px;
 
- background-image: url(../images/donation9.jpg);
- background-repeat: no-repeat;
- background-size: cover;
- background-attachment: fixed;
- 
- background-position: center;
- position: absolute;
- left: 0;
- top: 0;
- width: 1440px;
-height: 669px;
+    font-family: Arial, Helvetica, sans-serif;
 
+    background-image: linear-gradient(360deg, #121212 0%, rgba(18, 18, 18, 0) 100%), url(../images/donation9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
+    left: 0;
+    top: 0;
+    height: 669px;
+    width: 1340px;
 
- 
 }
 
-.background h1{
+.background-title {
     font-size: 80px;
     margin-bottom: 0;
-    
+
+
 }
 
-.background p {
+.background-description {
     font-family: 'Poppins';
     font-size: 18px;
 
-    
+    padding-top: 30px;
+
+
 }
 
-.button{
+.button {
 
     color: rgb(255, 255, 255);
     background: #FF5959;
     border: 0;
     padding: 15px;
-   border-radius: 5px;
-   font-size: 20px;
-   gap: 8px;
+    border-radius: 5px;
+    font-size: 20px;
+    gap: 8px;
+
+}
+
+
+/*     donate-today               */
+
+.donate-today-part {
+
+    text-align: center;
+
+}
+
+.donate-today-title {
+
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 75px;
+
+    margin-bottom: 0;
+    color: #121212;
+
+}
+
+.donate-today-description {
+
+    font-family: 'Poppins';
+    font-size: 18px;
+
+    color: #707070;
+
+
+
+
+}
+
+/* donate tk */
+
+.donate-tk {
+    color: #707070;
+    font-size: 30px;
+    font-family: sans-serif;
+    display: flex;
+    gap: 22px;
+    padding-left: 300px;
+    font-weight: 700;
+
+
+}
+
+
+.amount1 {
+    box-sizing: border-box;
+    border: 2px solid #FAFAFA;
+    border-radius: 5px;
+    padding: 45px 23px;
+    width: 135px;
+    height: 123px;
+}
+
+.amount2 {
+    box-sizing: border-box;
+    border: 2px solid #FF5959;
+    border-radius: 5px;
+    padding: 45px 23px;
+    width: 135px;
+    height: 123px;
+    color: #FF5959;
+}
+
+.amount3 {
+    box-sizing: border-box;
+    border: 2px solid #FAFAFA;
+    border-radius: 5px;
+    padding: 45px 23px;
+    width: 135px;
+    height: 123px;
+}
+
+.amount4 {
+    box-sizing: border-box;
+    border: 2px solid #FAFAFA;
+    border-radius: 5px;
+    padding: 45px 23px;
+    width: 135px;
+    height: 123px;
+}
+
+.amount5 {
+    box-sizing: border-box;
+    border: 2px solid #FAFAFA;
+    border-radius: 5px;
+    padding: 45px 23px;
+    width: 135px;
+    height: 123px;
+
+}
+
+
+.amount-text {
+
+    font-weight: 400;
+    font-size: 18px;
+    left: 625px;
+    top: 1162px;
+
+    color: #B3B3B3;
+    text-align: center;
+
+    padding-bottom: 10px;
+    margin-top: 60px;
+
+    border-style: none;
+    height: 28px;
+   
+
+
+}
+
+
+.button2 {
+
+    padding-top: 30px;
+   
+}
+
+
+/* Our Donate Plan */
+
+.donate-today2{
+
+   
 }
