@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+        :root {
+    --primary-color: #f76545;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 800px; */
+    height: 100vh;
+    background-color: rgb(77, 125, 132);
+}
+
+        .calender {
+            font-size: 2em;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            height: 100%;
+            padding: 35px;
+            background-color: rgb(255, 240, 213);
+            border-radius: 10px;
+            padding: 80px 20px 45px;
+        }
+
+        .day {
+            display: flex;
+            justify-content: center;
+        }
+
+        .date {
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bottom-lid {
+    position: absolute;
+    height: 167px;
+    width: 300px;
+    right: -14%;
+    bottom: -11%;
+    transform: skew(-38deg, 0deg);
+    border-radius: 10px;
+    background-color: var(--primary-color);;
+    z-index: -5;
+
+}
+
+        .calender-container {
+            width: 80%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        .round-ring {
+            width: 100px;
+            height: 85px;
+            /* background-color: #6e6e6e; */
+            transform: rotate3d(1, 7, 1, 71deg);
+            border-radius: 50%;
+            position: relative;
+            border: 10px solid #a6a3a3;
+            border-radius: 50% 50% 50% 50%;
+            border-right: none;
+        }
+
+
+        .calender-container {
+            width: 80%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .container {
+            height: 475px;
+            width: 615px;
+            transform: skewX(-7deg) rotate(3deg);
+            border-radius: 12px;
+            background-color: rgb(255, 240, 213);
+            margin-top: 50px;
+
+            position: relative;
+            z-index: 2;
+        }
+
+        .container::before {
+            content: '';
+            height: 513px;
+            width: 615px;
+            background-color: var(--primary-color);
+            position: absolute;
+            z-index: -1;
+            left: 3%;
+            top: 3%;
+            border-radius: 10px;
+            border-right: 3px solid rgb(84, 84, 84);
+        }
+        .container::after {
+    content: '';
+    height: 352px;
+    width: 615px;
+    background-color: var(--primary-color);
+    position: absolute;
+    z-index: -4;
+    top: 3%;
+    left: 14%;
+    border-radius: 10px;
+    transform: skew(20deg, 0deg);
+    border-bottom: 3px solid rgb(84, 84, 84);
+}
+.top-ring-box .box-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.top-ring-box {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: 20px;
+;
+}
+
+.top-ring-box .box-container .box {
+    height: 30px;
+    width: 50px;
+    background-color: #b0581e;
+    border-radius: 35%;
+}
+
+
+.top-ring-box .ring-container {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 130%;
+    left: -1%;
+    width: 100%;
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <div class="calender-container">
+        <div class="container">
+            <div class="top-ring-box">
+
+                <div class="box-container">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div>
+
+                <div class="ring-container">
+
+                    <div class="ring round-ring">
+                        <div class="cutout"></div>
+                    </div>
+
+                    <div class="ring round-ring">
+                        <div class="cutout"></div>
+                    </div>
+
+                    <div class="ring round-ring">
+                        <div class="cutout"></div>
+                    </div>
+
+                    <div class="ring round-ring">
+                        <div class="cutout"></div>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div class="calender">
+                    <div class="day">Sat</div>
+                    <div class="day">Sun</div>
+                    <div class="day">Mon</div>
+                    <div class="day">Tue</div>
+                    <div class="day">Wed</div>
+                    <div class="day">Thu</div>
+                    <div class="day">Fri</div>
+                    <div class="date">1</div>
+                    <div class="date">2</div>
+                    <div class="date">3</div>
+                    <div class="date">4</div>
+                    <div class="date">5</div>
+                    <div class="date">6</div>
+                    <div class="date">7</div>
+                    <div class="date">8</div>
+                    <div class="date">9</div>
+                    <div class="date">10</div>
+                    <div class="date">11</div>
+                    <div class="date">12</div>
+                    <div class="date">13</div>
+                    <div class="date">14</div>
+                    <div class="date">15</div>
+                    <div class="date">16</div>
+                    <div class="date">17</div>
+                    <div class="date">18</div>
+                    <div class="date">19</div>
+                    <div class="date">20</div>
+                    <div class="date">21</div>
+                    <div class="date">22</div>
+                    <div class="date">23</div>
+                    <div class="date">24</div>
+                    <div class="date">25</div>
+                    <div class="date">26</div>
+                    <div class="date">27</div>
+                    <div class="date">28</div>
+                    <div class="date">29</div>
+                    <div class="date">30</div>
+                </div>
+                <div class="bottom-lid"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
