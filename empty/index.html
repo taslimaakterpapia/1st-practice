@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>5th Assignment</title>
+</head>
+
+<body>
+  <header>
+
+    <section>
+      <div class="mt-12 flex justify-between w-full bg-blue-100">
+        <div class="mx-12 py-2 ">
+          <h2 class="text-4xl font-bold text-zinc-700 "> Interactive <br> <span
+              class="text-lg font-medium text-zinc-600">Geometry Genius</span>
+          </h2>
+        </div>
+
+        <div class=" py-8 mx-8 ">
+          <button class="text-white bg-sky-600 rounded-lg font-medium  px-8 py-2 hover:bg-sky-400">Blog
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+
+  </header>
+
+
+  <main>
+    <section class="flex">
+      <div class="grid grid-cols-3 gap-4 w-3/4 mx-4 text-center">
+
+        <!-- -----------------------triangle-------------------------------------->
+
+        <div class="bg-white mt-8 mx-auto text-center border border-zinc-50 rounded-lg p-8 hover:bg-rose-400">
+          <img src="images/triangle.png" alt="">
+          <h1 id="tri-name" class="text-2xl font-bold text-zinc-700 mt-6">Triangle</h1>
+          <p class="text-base font-normal text-zinc-700">Area (A) =0.5 x b x h</p>
+          <input id="tri-input1" class="mb-2 w-24 px-2 mt-3" type="number" placeholder="b">
+          <span>cm</span>
+          <input id="tri-input2" class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
+          <span>cm</span>
+          <br>
+          <button id="tri-btn" class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
+
+        </div>
+
+        <!-- -----------------------rectangle-------------------------------------->
+
+        <div class="bg-white mt-8 mx-auto text-center border border-zinc-50 rounded-lg p-8 hover:bg-cyan-400">
+          <img class="mt-4" src="images/rectangle.png" alt="">
+          <h1 class="text-2xl font-bold text-zinc-700 mt-8">Rectangle</h1>
+          <p class="text-base font-normal text-zinc-700">Area (A) = w x l</p>
+          <input id="rect-input1" class="mb-2 w-24 px-2 mt-3" type="number" placeholder="b">
+          <span>cm</span>
+          <input id="rect-input2" class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
+          <span>cm</span>
+          <br>
+          <button id="rect-btn" class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
+
+        </div>
+
+        <!-- -----------------------Parallelogram-------------------------------------->
+
+
+        <div class="bg-white mt-8 mx-auto text-center border border-zinc-50 rounded-lg p-8 hover:bg-yellow-400">
+          <img class="mt-8" src="images/parallelogram.png" alt="">
+          <h1 id="para-name" class="text-2xl font-bold text-zinc-700 mt-8">Parallelogram</h1>
+          <p class="text-base font-normal text-zinc-700">Area (A) = b x h</p>
+          <input id="para-input1" class="mb-2 w-24 px-2 mt-3" type="number" placeholder="b">
+          <span>cm</span>
+          <input id="para-input2" class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
+          <span>cm</span>
+          <br>
+          <button id="para-btn" class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
+
+        </div>
+
+        <!-- -----------------------Rhombus-------------------------------------->
+
+        <div class="bg-white mx-auto border border-zinc-50 rounded-lg p-8 hover:bg-violet-400">
+          <img class="mt-4" src="images/rhombus.png" alt="">
+          <h1 id="rhom-name" class="text-2xl font-bold text-zinc-700 mt-6">Rhombus</h1>
+          <p class="text-base font-normal text-zinc-700">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub> </p>
+          <input id="rhom-input1" class="mb-2 w-24 px-2 mt-3" type="number" placeholder="b">
+          <span>cm</span>
+          <input id="rhom-input2" class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
+          <span>cm</span>
+          <br>
+          <button id="rhom-btn" class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
+
+        </div>
+
+        <!-- -----------------------Pentagon-------------------------------------->
+
+        <div class="bg-white mx-auto text-center border border-zinc-50 rounded-lg p-8 hover:bg-lime-400">
+          <img class="mt-6 mx-8" class="mt-6" src="images/pentagon.png" alt="">
+          <h1 id="penta-name" class="text-2xl font-bold text-zinc-700 mt-6">Pentagon</h1>
+          <p class="text-base font-normal text-zinc-700">Area (A) = 0.5 x p x b </p>
+          <input id="penta-input1" class="mb-2 w-24 px-2 mt-3" type="number" placeholder="b">
+          <span>cm</span>
+          <input id="penta-input2" class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
+          <span>cm</span>
+          <br>
+          <button id="penta-btn" class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
+
+        </div>
+
+        <!-- -----------------------Ellipse-------------------------------------->
+
+        <div class="bg-white mx-auto text-center border border-zinc-50 rounded-lg p-8 hover:bg-orange-400">
+          <img class="mt-10 my-8" src="images/ellipse.png" alt="">
+          <h1 id="elli-name" class="text-2xl font-bold text-zinc-700 mt-6">Ellipse</h1>
+          <p class="text-base font-normal text-zinc-700">Area (A) = 3.1416bh</p>
+          <input id="elli-input1" class="mb-2 w-24 px-2 mt-3" type="number" placeholder="b">
+          <span>cm</span>
+          <input id="elli-input2" class="mb-2 w-24 px-2 mt-3 " type="number" placeholder="h">
+          <span>cm</span>
+          <br>
+          <button id="elli-btn" class="w-64 text-white bg-sky-600 rounded-lg font-medium py-2 mt-3">Calculate</button>
+
+        </div>
+
+
+      </div>
+
+
+
+
+      <!-- ------------------------------------------area calculation--------------->
+
+      <div>
+        <div class="p-2 mt-12 mx-12">
+          <h2 class="text-2xl font-medium text-center underline text-zinc-700">Area Calculation</h2>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="table w-full">
+
+            <tbody id="table-container"></tbody>
+
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+
+  </main>
+
+
+
+
+
+  <!-- -----------------------------js---------------------------------->
+
+  <script src="index.js"></script>
+</body>
+
+</html>
